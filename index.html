@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="apply_box">
+        <h1>Job Application<span class="title_small">(Web)</span></h1>
+        <form action="">
+          <div class="form_container_1">
+            <div class="form_control_left">
+              <label for="first_name"> First Name </label>
+              <br>
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="Enter First Name..."
+                style="height: 50px;width: 200px;font-size: 20px;border-radius: 15px;"
+              />
+            </div>
+            <div class="form_control_right">
+              <label for="last_name"> Last Name </label>
+              <br>
+              <input
+                id="last_name"
+                name="last_name"
+                placeholder="Enter Last Name..."
+                style="height: 50px;width: 200px;font-size: 20px;border-radius: 15px;"
+              />
+            </div>
+          </div>
+
+
+          <div class="form_container_2">
+            <div class="form_control_left">
+              <label for="email"> Email </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email..."
+                style="height: 50px;width: 200px;font-size: 20px;border-radius: 15px;"
+              />
+            </div>
+            <div class="form_control_right">
+              <label for="job_role"> Job Role </label>
+              <select id="job_role" name="job_role" style="height: 50px;width: 200px;font-size: 20px;border-radius: 15px;">
+                <option value="">Select Job Role</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="full_stack">Full Stack Developer</option>
+                <option value="ui_ux">UI UX Designer</option>
+              </select>
+            </div>
+          </div>
+          
+
+          <div class="textarea_control">
+            <label for="address"> Address </label><br>
+            <textarea
+              id="address"
+              name="address"
+              placeholder="Enter Address"
+              style="height: 50px;width: 500px;font-size: 20px;border-radius: 15px;"
+            ></textarea>
+          </div>
+
+          
+          <div class="form_container_3">
+            <div class="form_control_left">
+              <label for="city"> City </label>
+              <input id="city" name="city" placeholder="Enter City Name..." style="height: 50px;width: 200px;font-size: 20px;border-radius: 15px;"/>
+            </div>
+            <div class="form_control_right">
+              <label for="pincode"> Pincode </label>
+              <input
+                type="number"
+                id="pincode"
+                name="pincode"
+                placeholder="Enter Pincode Name..."
+                style="height: 50px;width: 200px;font-size: 20px;border-radius: 15px;"
+              />
+            </div>
+          </div>
+
+
+          <div class="form_container_4">
+            <div class="form_control_left">
+              <label for="date"> Date </label>
+              <input value="2022-01-10" type="date" id="date" name="date" style="height: 50px;width: 200px;font-size: 20px;border-radius: 15px;"/>
+            </div>
+            <div class="form_control_right">
+              <label for="upload"> Upload CV </label>
+              <input type="file" id="upload" name="upload" style="font-size:15px;"/>
+            </div>
+          </div>
+            
+
+          <div class="button_container">
+            <button type="submit" style="font-size:20px">Apply Now</button>
+          </div>
+        </form>
+      </div>
+  </body>
+</html>
